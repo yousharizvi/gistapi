@@ -3,11 +3,11 @@ import styled from 'styled-components'
 import Octicon from 'react-octicon'
 import Search from './Search';
 
-function Header() {
+function Header({ onSearchInput }) {
   return (
     <Wrapper>
-      <Octicon name="mark-github" mega/>
-      <Search />
+      <Octicon name="mark-github" mega />
+      <Search onSearchInput={onSearchInput}/>
     </Wrapper>
   )
 }
